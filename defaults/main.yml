@@ -1,0 +1,25 @@
+# Standards: 0.1
+---
+# @var s3cmd_host_base:description: List of users to write the config
+s3cmd_users: []
+
+# @var s3cmd_version:description: Define a specific version to install
+s3cmd_version:
+
+# @var s3cmd_host_base:description: Host base for connection
+# @var s3cmd_host_base:example: $ "storage.example.com"
+s3cmd_host_base:
+
+# @var s3cmd_host_bucket:description: Host bucket for connection
+s3cmd_host_bucket: "{{ s3cmd_host_base }}/%(bucket)"
+
+# @var s3cmd_access_key:description: Access key for connection
+s3cmd_access_key:
+
+# @var s3cmd_secret_key:description: Secret key for connection
+s3cmd_secret_key:
+
+# @var s3cmd_bucket_location:description: Bucket location for connection
+s3cmd_bucket_location: us-east-1
+
+...

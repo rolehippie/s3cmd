@@ -1,0 +1,26 @@
+# Standards: 0.1
+---
+- name: Install pip package
+  package:
+    name: python3-pip
+    state: present
+  tags:
+    - s3cmd
+
+- name: Install s3cmd pip
+  pip:
+    name: s3cmd
+    state: "{{ s3cmd_version is defined | ternary('present', 'latest') }}"
+    version: "{{ s3cmd_version | default(omit) }}"
+  tags:
+    - s3cmd
+
+- name: Handle client config
+  loop: "{{ s3cmd_users }}"
+  loop_control:
+    loop_var: username
+  include_tasks: config.yml
+  tags:
+    - s3cmd
+
+...
