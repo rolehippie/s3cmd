@@ -1,4 +1,4 @@
-# Standards: 0.1
+# Standards: 1.2
 ---
 # @var s3cmd_host_base:description: List of users to write the config
 s3cmd_users: []
