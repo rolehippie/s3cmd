@@ -20,6 +20,8 @@
 # None
 # @end
 galaxy_info:
+  role_name: s3cmd
+  namespace: rolehippie
   author: Thomas Boerger
   description: Ansible role to install and configure S3 command-line client
   license: Apache-2.0
