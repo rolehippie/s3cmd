@@ -12,6 +12,9 @@
   template:
     src: config.j2
     dest: "{{ s3cmd_current.home }}/.s3cfg"
+    owner: "{{ s3cmd_current.name }}"
+    group: "{{ s3cmd_current.group }}"
+    mode: u=rw,g=r,o=r
   tags:
     - s3cmd
 
