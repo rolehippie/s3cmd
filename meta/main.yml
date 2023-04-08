@@ -7,7 +7,7 @@
 # [![Readme Workflow](https://github.com/rolehippie/s3cmd/actions/workflows/readme.yml/badge.svg)](https://github.com/rolehippie/s3cmd/actions/workflows/readme.yml)
 # [![Galaxy Workflow](https://github.com/rolehippie/s3cmd/actions/workflows/galaxy.yml/badge.svg)](https://github.com/rolehippie/s3cmd/actions/workflows/galaxy.yml)
 # [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/s3cmd)](https://github.com/rolehippie/s3cmd/blob/master/LICENSE)
-# [![Ansible Role](https://img.shields.io/ansible/role/51493)](https://galaxy.ansible.com/rolehippie/s3cmd)
+# [![Ansible Role](https://img.shields.io/badge/role-rolehippie.s3cmd-blue)](https://galaxy.ansible.com/rolehippie/s3cmd)
 #
 # Ansible role to install and configure S3 command-line client.
 #
