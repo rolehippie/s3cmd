@@ -1,4 +1,3 @@
-# Standards: 1.2
 ---
 - name: Detect current user
   register: s3cmd_current
