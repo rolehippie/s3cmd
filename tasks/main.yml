@@ -1,14 +1,13 @@
-# Standards: 1.2
 ---
 - name: Install pip package
-  package:
+  ansible.builtin.package:
     name: python3-pip
     state: present
   tags:
     - s3cmd
 
 - name: Install s3cmd pip
-  pip:
+  ansible.builtin.pip:
     name: s3cmd
     state: "{{ s3cmd_version is defined | ternary('present', 'latest') }}"
     version: "{{ s3cmd_version | default(omit) }}"
@@ -19,7 +18,7 @@
   loop: "{{ s3cmd_users }}"
   loop_control:
     loop_var: username
-  include_tasks: config.yml
+  ansible.builtin.include_tasks: config.yml
   tags:
     - s3cmd
 
