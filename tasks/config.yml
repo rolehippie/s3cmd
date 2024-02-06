@@ -1,14 +1,14 @@
 ---
 - name: Detect current user
   register: s3cmd_current
-  user:
+  ansible.builtin.user:
     name: "{{ username }}"
     state: present
   tags:
     - s3cmd
 
 - name: Write client config
-  template:
+  ansible.builtin.template:
     src: config.j2
     dest: "{{ s3cmd_current.home }}/.s3cfg"
     owner: "{{ s3cmd_current.name }}"
