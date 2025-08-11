@@ -1,4 +1,4 @@
-# s3cmd
+# workspace
 
 [![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/s3cmd)
 [![General Workflow](https://github.com/rolehippie/s3cmd/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/s3cmd/actions/workflows/general.yml)
@@ -114,7 +114,6 @@ s3cmd_version:
 ## Discovered Tags
 
 **_s3cmd_**
-
 
 ## Dependencies
 
