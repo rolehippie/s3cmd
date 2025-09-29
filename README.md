@@ -1,4 +1,4 @@
-# workspace
+# s3cmd
 
 [![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/s3cmd)
 [![General Workflow](https://github.com/rolehippie/s3cmd/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/s3cmd/actions/workflows/general.yml)
@@ -23,6 +23,7 @@ Building and improving this Ansible role have been sponsored by my current and p
   - [s3cmd_host_bucket](#s3cmd_host_bucket)
   - [s3cmd_secret_key](#s3cmd_secret_key)
   - [s3cmd_users](#s3cmd_users)
+  - [s3cmd_venv_path](#s3cmd_venv_path)
   - [s3cmd_version](#s3cmd_version)
 - [Discovered Tags](#discovered-tags)
 - [Dependencies](#dependencies)
@@ -99,6 +100,16 @@ s3cmd_secret_key:
 
 ```YAML
 s3cmd_users: []
+```
+
+### s3cmd_venv_path
+
+Path to venv for the pip installation
+
+#### Default value
+
+```YAML
+s3cmd_venv_path: /usr/local/share/s3cmd
 ```
 
 ### s3cmd_version

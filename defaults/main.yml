@@ -5,6 +5,9 @@ s3cmd_users: []
 # @var s3cmd_version:description: Define a specific version to install
 s3cmd_version:
 
+# @var s3cmd_venv_path:description: Path to venv for the pip installation
+s3cmd_venv_path: /usr/local/share/s3cmd
+
 # @var s3cmd_host_base:description: Host base for connection
 # @var s3cmd_host_base:example: $ "storage.example.com"
 s3cmd_host_base:

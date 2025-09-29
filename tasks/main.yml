@@ -1,16 +1,37 @@
 ---
-- name: Install pip package
+- name: Install required packages
+  loop:
+    - python3-pip
+    - python3-venv
   ansible.builtin.package:
-    name: python3-pip
+    name: "{{ item }}"
     state: present
   tags:
     - s3cmd
 
-- name: Install s3cmd pip
+- name: Create virtual env
+  ansible.builtin.pip:
+    name: virtualenv
+    virtualenv: "{{ s3cmd_venv_path }}"
+    virtualenv_python: python3
+  tags:
+    - s3cmd
+
+- name: Install s3cmd package
   ansible.builtin.pip:
     name: s3cmd
     state: "{{ s3cmd_version is defined | ternary('present', 'latest') }}"
     version: "{{ s3cmd_version | default(omit) }}"
+    virtualenv: "{{ s3cmd_venv_path }}"
+  tags:
+    - s3cmd
+
+- name: Symlink venv executable
+  ansible.builtin.file:
+    src: "{{ s3cmd_venv_path }}/bin/s3cmd"
+    dest: /usr/local/bin/s3cmd
+    state: link
+    force: true
   tags:
     - s3cmd
 
