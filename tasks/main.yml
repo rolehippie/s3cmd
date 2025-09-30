@@ -2,18 +2,10 @@
 - name: Install required packages
   loop:
     - python3-pip
-    - python3-venv
+    - python3-virtualenv
   ansible.builtin.package:
     name: "{{ item }}"
     state: present
-  tags:
-    - s3cmd
-
-- name: Create virtual env
-  ansible.builtin.pip:
-    name: virtualenv
-    virtualenv: "{{ s3cmd_venv_path }}"
-    virtualenv_python: python3
   tags:
     - s3cmd
 
