@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.0](https://github.com/rolehippie/s3cmd/compare/v2.2.0...v2.3.0) (2026-08-10)
+
+### Dependencies
+
+* **minor:** update dependency pipx:ansible-doctor to v8.4.0 ([#53](https://github.com/rolehippie/s3cmd/issues/53)) ([034ece3](https://github.com/rolehippie/s3cmd/commit/034ece3141c6d9e3f821c2f547c8247fb66bd50a))
+* **patch:** update dependency python to v3.14.7 ([#51](https://github.com/rolehippie/s3cmd/issues/51)) ([4f94ec4](https://github.com/rolehippie/s3cmd/commit/4f94ec47c54110e024eddd04b66418d9e1cf9c8b))
+
 ## [2.2.0](https://github.com/rolehippie/s3cmd/compare/v2.1.0...v2.2.0) (2026-07-27)
 
 ## [2.1.0](https://github.com/rolehippie/s3cmd/compare/v2.0.0...v2.1.0) (2025-09-30)
