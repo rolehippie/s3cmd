@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.4.0](https://github.com/rolehippie/s3cmd/compare/v2.3.0...v2.4.0) (2026-08-17)
+
+### Dependencies
+
+* **minor:** update dependency pipx:ansible-lint to v26.8.0 ([#56](https://github.com/rolehippie/s3cmd/issues/56)) ([912bdc8](https://github.com/rolehippie/s3cmd/commit/912bdc87587746692b78be16748f7e4923618cac))
+* **minor:** update dependency pipx:molecule to v26.8.0 ([#57](https://github.com/rolehippie/s3cmd/issues/57)) ([0f61915](https://github.com/rolehippie/s3cmd/commit/0f61915166162c7a82da95bc676c649935f56f3a))
+* **patch:** update dependency pipx:ansible-core to v2.21.3 ([#54](https://github.com/rolehippie/s3cmd/issues/54)) ([885bc1e](https://github.com/rolehippie/s3cmd/commit/885bc1e1271788b8252788ebc8dd609e7bba1970))
+* **patch:** update dependency pre-commit to v4.6.2 ([#55](https://github.com/rolehippie/s3cmd/issues/55)) ([8273438](https://github.com/rolehippie/s3cmd/commit/8273438e9175c2b46c1c061829bb0d303a2059fc))
+
 ## [2.3.0](https://github.com/rolehippie/s3cmd/compare/v2.2.0...v2.3.0) (2026-08-10)
 
 ### Dependencies
